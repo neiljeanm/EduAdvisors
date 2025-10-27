@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Policy Advisors for Schools</title>
+  <title>Education Advisors</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -52,6 +52,25 @@
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #10b981;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
     footer {
       background: #f1f5f9;
       text-align: center;
@@ -67,8 +86,8 @@
 </head>
 <body>
   <header>
-    <h1>Helping School Districts Harness AI</h1>
-    <p>Responsibly, Ethically, Effectively</p>
+    <h1>Education Advisors</h1>
+    <p>Helping School Districts Harness AI — Responsibly, Ethically, Effectively</p>
     <p>Expert guidance on AI policy, teacher training, and digital safety for K–12 environments.</p>
     <a href="#contact" class="cta-button">Schedule a Free Consultation</a>
   </header>
@@ -114,10 +133,22 @@
     </ul>
   </section>
 
-  <section>
-    <h2>Let’s Talk</h2>
-    <p>We’ll listen to your needs and share first steps — no strings attached.</p>
-    <a href="#contact" class="cta-button">Free 30-Minute Strategy Call</a>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have a question or want to schedule a strategy call? Send us a message:</p>
+
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label for="name">Name:</label><br />
+      <input type="text" name="name" required /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" name="email" required /><br /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea name="message" rows="5" required></textarea><br /><br />
+
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
@@ -125,9 +156,9 @@
       <a href="#">Home</a> |
       <a href="#">Services</a> |
       <a href="#">About</a> |
-      <a href="#">Contact</a>
+      <a href="#contact">Contact</a>
     </p>
-    <p>&copy; 2025 AI Policy Advisors for Schools</p>
+    <p>&copy; 2025 Education Advisors</p>
   </footer>
 </body>
 </html>
